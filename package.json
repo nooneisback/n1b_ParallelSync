@@ -1,0 +1,37 @@
+{
+  "name": "@rbxts/parallelsync",
+  "author": {
+	"name": "nooneisback",
+	"url": "https://github.com/nooneisback"
+  },
+  "version": "1.0.0",
+  "main": "out/init.lua",
+  "license": "MIT",
+  "scripts": {
+    "build": "rbxtsc",
+    "watch": "rbxtsc -w",
+    "prepublishOnly": "yarn run build"
+  },
+  "types": "out/index.d.ts",
+  "files": [
+    "out",
+    "!**/*.tsbuildinfo"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+	"type": "git",
+	"url": "https://github.com/nooneisback/n1b_ParallelSync"
+  },
+  "devDependencies": {
+    "@rbxts/compiler-types": "^2.3.0-types.1",
+    "@rbxts/types": "^1.0.778",
+    "@typescript-eslint/eslint-plugin": "^7.11.0",
+    "@typescript-eslint/parser": "^7.11.0",
+    "eslint": "^9.3.0",
+    "eslint-plugin-roblox-ts": "^0.0.36",
+    "roblox-ts": "^2.3.0",
+    "typescript": "^5.4.5"
+  }
+}
